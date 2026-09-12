@@ -1,0 +1,243 @@
+{
+  "run_date": "2026-09-12",
+  "generated_at": "2026-09-12T01:39:47.649787+00:00",
+  "samples_per_prompt": 5,
+  "engines": [
+    {
+      "id": "gemini",
+      "label": "Gemini",
+      "model": "gemini/gemini-2.5-flash",
+      "status": "live"
+    },
+    {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "model": "gpt-4o-mini",
+      "status": "awaiting_key"
+    },
+    {
+      "id": "perplexity",
+      "label": "Perplexity",
+      "model": "perplexity/sonar",
+      "status": "awaiting_key"
+    },
+    {
+      "id": "copilot",
+      "label": "Copilot",
+      "model": "gpt-4o",
+      "status": "awaiting_key"
+    }
+  ],
+  "results": {
+    "p01": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p02": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p03": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p04": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p05": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p06": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p07": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p08": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p09": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    },
+    "p10": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          },
+          {
+            "error": "litellm.NotFoundError: GeminiException - {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions A"
+          }
+        ]
+      }
+    }
+  }
+}
