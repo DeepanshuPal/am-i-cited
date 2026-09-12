@@ -7,6 +7,12 @@ on:
       - "web/**"
       - ".github/workflows/deploy.yml"
   workflow_dispatch:
+  # The sample workflow pushes data as github-actions[bot]; GITHUB_TOKEN pushes
+  # never trigger workflows, so rebuild the board when a sample run finishes.
+  workflow_run:
+    workflows: [sample]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
