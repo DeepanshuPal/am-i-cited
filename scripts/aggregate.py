@@ -104,7 +104,14 @@ def main():
         with open(path) as f:
             runs.append(json.load(f))
     if not runs:
-        raise SystemExit("no runs found in data/runs - run scripts/sample.py first")
+        runs = [{
+            "run_date": "pending",
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+            "samples_per_prompt": int(tracker.get("samples_per_prompt", 5)),
+            "engines": [{k: e[k] for k in ("id", "label", "model")} | {"status": "awaiting_key"}
+                        for e in tracker["engines"]],
+            "results": {},
+        }]
 
     latest = runs[-1]
     agg = aggregate_run(latest, tracker)

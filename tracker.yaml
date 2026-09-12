@@ -74,10 +74,8 @@ engines:
     key_env: GEMINI_API_KEY
   - id: chatgpt
     label: ChatGPT
-    # GitHub Models free tier - in Actions the built-in GITHUB_TOKEN is the
-    # key, so this engine samples at zero cost on every fork.
-    model: github/gpt-4o-mini
-    key_env: GITHUB_TOKEN
+    model: gpt-4o-mini
+    key_env: OPENAI_API_KEY
   - id: perplexity
     label: Perplexity
     model: perplexity/sonar
