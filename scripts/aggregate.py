@@ -118,6 +118,8 @@ def main():
 
     trend = []
     for run in runs:
+        if not run.get("results"):
+            continue  # synthetic zero-run state contributes no trend point
         a = aggregate_run(run, tracker)
         trend.append({
             "date": run["run_date"],

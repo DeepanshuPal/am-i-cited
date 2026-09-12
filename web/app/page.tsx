@@ -16,7 +16,7 @@ export default function Home() {
         <div className="glow-accent absolute inset-0" />
         <div className="relative mx-auto max-w-6xl px-6 pb-20 pt-24 sm:pt-32">
           <p className="type-label">open-source AEO tracking</p>
-          <h1 className="mt-5 max-w-3xl text-[42px] font-medium leading-[1.05] tracking-[-0.035em] sm:text-[64px]">
+          <h1 className="mt-5 max-w-4xl text-[40px] font-medium leading-[1.06] tracking-[-0.035em] sm:text-[56px]">
             Your buyers stopped googling.
             <br />
             <span className="text-mist-500">Do the LLMs send them to you?</span>
@@ -75,7 +75,7 @@ export default function Home() {
               <p className="font-mono text-[12px] text-mist-500">first weekly sample pending - the board fills itself in.</p>
             )}
           </div>
-          {data.aggregate.trend.length > 0 && (
+          {hasData && data.aggregate.trend.length > 0 && (
             <div className="mt-12">
               <p className="type-label mb-4">share of voice, weekly</p>
               <TrendChart
