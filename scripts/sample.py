@@ -122,14 +122,24 @@ def main():
                 continue
             full = next(e for e in tracker["engines"] if e["id"] == eng["id"])
             runs = []
+            # github/<model> means GitHub Models: call its OpenAI-compatible
+            # endpoint directly so any GITHUB_TOKEN (Actions built-in or PAT)
+            # just works.
+            model = full["model"]
+            extra = {}
+            if model.startswith("github/"):
+                model = "openai/" + model.split("/", 1)[1]
+                extra["api_base"] = "https://models.github.ai/inference"
+                extra["api_key"] = os.environ["GITHUB_TOKEN"]
             for i in range(n):
                 try:
                     resp = litellm.completion(
-                        model=full["model"],
+                        model=model,
                         messages=[{"role": "user", "content": prompt["text"]}],
                         temperature=1.0,
                         max_tokens=700,
                         timeout=90,
+                        **extra,
                     )
                     answer = resp.choices[0].message.content or ""
                     runs.append(analyze(answer, project, competitors))
