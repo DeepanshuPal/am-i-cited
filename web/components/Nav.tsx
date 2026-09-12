@@ -14,7 +14,7 @@ export default function Nav() {
           <span className="flex h-5 w-5 items-center justify-center rounded-[5px] border border-ink-500 bg-ink-800">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-bright" />
           </span>
-          <span className="text-[15px] font-medium tracking-tight">Am I Cited?</span>
+          <span className="whitespace-nowrap text-[15px] font-medium tracking-tight">Am I Cited?</span>
         </Link>
         <nav className="flex items-center gap-1 text-[13px]">
           {links.map((l) => (
