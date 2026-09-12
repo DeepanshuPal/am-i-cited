@@ -9,16 +9,16 @@ const links = [
 export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink-700/70 bg-ink-950/80 backdrop-blur-md">
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="flex items-center gap-2.5">
           <span className="flex h-5 w-5 items-center justify-center rounded-[5px] border border-ink-500 bg-ink-800">
             <span className="h-1.5 w-1.5 rounded-full bg-accent-bright" />
           </span>
           <span className="whitespace-nowrap text-[15px] font-medium tracking-tight">Am I Cited?</span>
         </Link>
-        <nav className="flex items-center gap-1 text-[13px]">
+        <nav className="flex items-center gap-0.5 text-[13px] sm:gap-1">
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="link-quiet rounded-md px-3 py-1.5 hover:bg-ink-800">
+            <Link key={l.href} href={l.href} className={`link-quiet whitespace-nowrap rounded-md px-2 py-1.5 hover:bg-ink-800 sm:px-3${l.label === "Methodology" ? " hidden sm:block" : ""}`}>
               {l.label}
             </Link>
           ))}
@@ -26,7 +26,7 @@ export default function Nav() {
             href="https://github.com/DeepanshuPal/am-i-cited"
             target="_blank"
             rel="noreferrer"
-            className="ml-2 flex items-center gap-1.5 rounded-md border border-ink-600 bg-ink-900 px-3 py-1.5 text-mist-100 transition-colors hover:border-ink-500 hover:bg-ink-800"
+            className="ml-1.5 flex items-center gap-1.5 rounded-md border border-ink-600 bg-ink-900 px-2.5 py-1.5 sm:ml-2 sm:px-3 text-mist-100 transition-colors hover:border-ink-500 hover:bg-ink-800"
           >
             <GitHubMark className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Star</span>
