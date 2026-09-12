@@ -11,6 +11,8 @@ in GitHub Actions, .env locally).
 
 import json
 import os
+import random
+import time
 import re
 import sys
 from datetime import datetime, timezone
@@ -122,21 +124,40 @@ def main():
                 continue
             full = next(e for e in tracker["engines"] if e["id"] == eng["id"])
             runs = []
+            delay = 15.0
             for i in range(n):
-                try:
-                    resp = litellm.completion(
-                        model=full["model"],
-                        messages=[{"role": "user", "content": prompt["text"]}],
-                        temperature=1.0,
-                        max_tokens=700,
-                        timeout=90,
-                    )
-                    answer = resp.choices[0].message.content or ""
-                    runs.append(analyze(answer, project, competitors))
-                    print(f"[ok] {prompt['id']} {eng['id']} sample {i + 1}/{n}")
-                except Exception as e:  # engine errors are data too
-                    runs.append({"error": str(e)[:300]})
-                    print(f"[err] {prompt['id']} {eng['id']} sample {i + 1}/{n}: {e}")
+                attempt = 0
+                while True:
+                    try:
+                        resp = litellm.completion(
+                            model=full["model"],
+                            messages=[{"role": "user", "content": prompt["text"]}],
+                            temperature=1.0,
+                            max_tokens=700,
+                            timeout=90,
+                        )
+                        answer = resp.choices[0].message.content or ""
+                        runs.append(analyze(answer, project, competitors))
+                        print(f"[ok] {prompt['id']} {eng['id']} sample {i + 1}/{n}")
+                        time.sleep(2)  # stay under free-tier per-minute quota
+                        break
+                    except Exception as e:  # engine errors are data too
+                        transient = (
+                            "RateLimit" in type(e).__name__
+                            or "429" in str(e)
+                            or "quota" in str(e).lower()
+                            or "rate" in str(e).lower()
+                        )
+                        attempt += 1
+                        if transient and attempt <= 6:
+                            wait = delay + random.uniform(0, 5)
+                            print(f"[rate] {prompt['id']} {eng['id']} sample {i + 1}/{n}: retry {attempt} in {wait:.0f}s")
+                            time.sleep(wait)
+                            delay = min(delay * 2, 120)
+                            continue
+                        runs.append({"error": str(e)[:300]})
+                        print(f"[err] {prompt['id']} {eng['id']} sample {i + 1}/{n}: {e}")
+                        break
             results[prompt["id"]][eng["id"]] = {"runs": runs}
 
     RUNS_DIR.mkdir(parents=True, exist_ok=True)
