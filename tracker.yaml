@@ -1,0 +1,90 @@
+# Am I Cited? - tracker configuration.
+# This file is the whole product: what you track, which buyer questions get
+# asked, which engines answer them, and who counts as a competitor.
+# Fork the repo, edit this file, add API keys as repo secrets, done.
+
+project:
+  name: voice-router
+  url: https://github.com/DeepanshuPal/voice-router
+  # Domains that count as a citation of YOU.
+  domains:
+    - github.com/DeepanshuPal/voice-router
+  # Strings that count as a mention of you (case-insensitive).
+  aliases:
+    - voice-router
+    - voice router
+  category: voice AI routing
+
+# Everyone else whose mention steals your share of voice.
+competitors:
+  - name: LiteLLM
+    aliases: [litellm]
+    domains: [litellm.ai, github.com/BerriAI/litellm, docs.litellm.ai]
+  - name: OpenRouter
+    aliases: [openrouter, open router]
+    domains: [openrouter.ai]
+  - name: Retell AI
+    aliases: [retell ai, retellai, retell]
+    domains: [retellai.com]
+  - name: Vapi
+    aliases: [vapi]
+    domains: [vapi.ai]
+  - name: Pipecat
+    aliases: [pipecat]
+    domains: [pipecat.ai, github.com/pipecat-ai/pipecat]
+  - name: LiveKit
+    aliases: [livekit, live kit]
+    domains: [livekit.io, github.com/livekit]
+  - name: Vocode
+    aliases: [vocode]
+    domains: [vocode.dev, github.com/vocodedev/vocode-core]
+  - name: Bland AI
+    aliases: [bland ai, bland.ai, bland]
+    domains: [bland.ai]
+
+# The questions your buyers actually ask. These are what get sampled.
+prompts:
+  - id: p01
+    text: What is the best open-source tool for routing voice AI calls across multiple STT and TTS providers?
+  - id: p02
+    text: How do I avoid lock-in with a single voice AI provider like Deepgram or ElevenLabs?
+  - id: p03
+    text: What are the best alternatives to Retell AI for building voice agents?
+  - id: p04
+    text: Is there a self-hosted proxy that gives me one OpenAI-compatible API for Deepgram, Whisper, ElevenLabs and Cartesia?
+  - id: p05
+    text: What is the cheapest way to route speech-to-text calls across providers based on price?
+  - id: p06
+    text: What are the best tools for benchmarking STT providers on my own audio files?
+  - id: p07
+    text: How do I add automatic failover between TTS providers in my voice agent?
+  - id: p08
+    text: What should I use to orchestrate STT, TTS and LLM calls for a production voice agent?
+  - id: p09
+    text: Are there open-source alternatives to OpenRouter that also cover voice models?
+  - id: p10
+    text: How do I A/B test voice AI providers without refactoring my agent code?
+
+# Engines to sample. An engine runs when its key env var is present as a repo
+# secret; otherwise it is reported as awaiting_key and costs nothing.
+engines:
+  - id: gemini
+    label: Gemini
+    model: gemini/gemini-2.5-flash
+    key_env: GEMINI_API_KEY
+  - id: chatgpt
+    label: ChatGPT
+    model: gpt-4o-mini
+    key_env: OPENAI_API_KEY
+  - id: perplexity
+    label: Perplexity
+    model: perplexity/sonar
+    key_env: PERPLEXITY_API_KEY
+  - id: copilot
+    label: Copilot
+    model: gpt-4o
+    key_env: AZURE_API_KEY
+
+# LLM answers are nondeterministic. Every prompt x engine pair is sampled this
+# many times per run; the board only ever reports percentages across samples.
+samples_per_prompt: 5
