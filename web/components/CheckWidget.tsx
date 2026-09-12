@@ -9,10 +9,10 @@ const PROVIDERS = [
     id: "gemini",
     label: "Gemini",
     hint: "free key at aistudio.google.com",
-    models: ["gemini-2.5-flash", "gemini-2.0-flash"],
+    models: ["gemini-3.6-flash", "gemini-3.6-pro"],
   },
   { id: "openai", label: "OpenAI", hint: "sk-...", models: ["gpt-4o-mini", "gpt-4o"] },
-  { id: "openrouter", label: "OpenRouter", hint: "one key, every model", models: ["openai/gpt-4o-mini", "google/gemini-2.5-flash"] },
+  { id: "openrouter", label: "OpenRouter", hint: "one key, every model", models: ["openai/gpt-4o-mini", "google/gemini-3.6-flash"] },
 ] as const;
 
 type Verdict = { mentioned: boolean; cited: boolean; excerpt: string } | { error: string };

@@ -70,7 +70,7 @@ prompts:
 engines:
   - id: gemini
     label: Gemini
-    model: gemini/gemini-2.5-flash
+    model: gemini/gemini-3.6-flash
     key_env: GEMINI_API_KEY
   - id: chatgpt
     label: ChatGPT
