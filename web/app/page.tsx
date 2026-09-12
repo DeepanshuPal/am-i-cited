@@ -160,9 +160,7 @@ gh secret set GEMINI_API_KEY
             <p className="max-w-md text-[13.5px] leading-relaxed text-mist-500">
               Standing on{" "}
               <a className="link-quiet underline decoration-ink-500 underline-offset-4" href="https://github.com/BerriAI/litellm" target="_blank" rel="noreferrer">LiteLLM</a>
-              {" "}for one API across every engine,{" "}
-              <a className="link-quiet underline decoration-ink-500 underline-offset-4" href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noreferrer">Firecrawl</a>
-              {" "}for question discovery, GitHub Actions for the weekly clock, GitHub Pages for the board.
+              {" "}for one API across every engine, GitHub Actions for the weekly clock, GitHub Pages for the board.
             </p>
             <p className="font-mono text-[11.5px] text-mist-600">total monthly cost at founder scale: about a coffee</p>
           </div>

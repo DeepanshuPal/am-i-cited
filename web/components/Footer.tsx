@@ -9,8 +9,6 @@ export default function Footer() {
           <p className="mt-1 max-w-sm text-[13px] leading-relaxed text-mist-500">
             Open-source AEO tracker. Built on{" "}
             <a className="link-quiet underline decoration-ink-500 underline-offset-4" href="https://github.com/BerriAI/litellm" target="_blank" rel="noreferrer">LiteLLM</a>
-            {" "}and{" "}
-            <a className="link-quiet underline decoration-ink-500 underline-offset-4" href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noreferrer">Firecrawl</a>
             . No backend, no database, your keys never leave your hands.
           </p>
         </div>
