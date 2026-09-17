@@ -39,7 +39,7 @@ Then:
 2. Repo Settings -> Pages -> Source: **GitHub Actions**.
 3. Actions -> **sample** -> Run workflow, then **deploy** -> Run workflow.
 
-Your board is live at `https://<you>.github.io/am-i-cited/`. The sample
+Your board is live at `https://deepanshupal.github.io/am-i-cited/`. The sample
 workflow re-runs every Monday 04:17 UTC and commits the new data.
 
 ### Run it locally
