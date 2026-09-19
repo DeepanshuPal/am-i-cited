@@ -27,10 +27,14 @@ def aggregate_run(run: dict, tracker: dict) -> dict:
     per_prompt = []
     engine_tot = {e: {"n": 0, "mentioned": 0, "cited": 0, "pos": [], "comp": {c: 0 for c in comp_names}} for e in live}
 
-    for pid, engines in run["results"].items():
+    for pid, engines in run.get("results", {}).items():
+        if pid not in prompts:
+            continue  # old run data may outlive a removed tracker prompt
         p_stats = {"n": 0, "mentioned": 0, "cited": 0, "pos": [], "comp_mentions": 0}
         for eid, payload in engines.items():
-            for r in payload["runs"]:
+            if eid not in engine_tot:
+                continue  # ignore disabled or retired engines in historical data
+            for r in payload.get("runs", []):
                 if r.get("error"):
                     continue
                 t = engine_tot[eid]
