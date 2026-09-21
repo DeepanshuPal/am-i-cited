@@ -1,0 +1,326 @@
+{
+  "run_date": "2026-09-21",
+  "generated_at": "2026-09-21T15:08:47.955579+00:00",
+  "samples_per_prompt": 5,
+  "engines": [
+    {
+      "id": "gemini",
+      "label": "Gemini",
+      "model": "gemini/gemini-3.6-flash",
+      "status": "live"
+    },
+    {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "model": "gpt-4o-mini",
+      "status": "awaiting_key"
+    },
+    {
+      "id": "perplexity",
+      "label": "Perplexity",
+      "model": "perplexity/sonar",
+      "status": "awaiting_key"
+    },
+    {
+      "id": "copilot",
+      "label": "Copilot",
+      "model": "gpt-4o",
+      "status": "awaiting_key"
+    }
+  ],
+  "results": {
+    "p01": {
+      "gemini": {
+        "runs": [
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "*Cons:* Developer-centric (code framework), not an out-of-the-box admin UI.\n\n    *   **"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "Telephony Engine + CPaaS for Voice AI (SIP-first)**\n        *   **Jambonz:**\n            *"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "swap Deepgram for OpenAI Whisper, or ElevenLabs for Cartesia with a single line of config/code.\n    *   *Latency"
+          }
+        ]
+      }
+    },
+    "p02": {
+      "gemini": {
+        "runs": [
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "in vendor dashboard forms.\n\n5.  **Structure the Response:**\n    *   **Introduction:** Acknowledge the fast-evolving"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "*Strategy 5: Multi-Provider Routing / Fallback Systems*\n        *   Implement dynamic routing (e.g., primary"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "To avoid lock-in with voice AI providers like Deepgram (STT - Speech-to-Text) or ElevenLabs (TTS -"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "Avoid proprietary markup"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          }
+        ]
+      }
+    },
+    "p03": {
+      "gemini": {
+        "runs": [
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "hosting.\n\n    *   *Bolna:*\n        *   *Why:* Emerging open-source framework specifically for voice agents."
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [
+              "Vapi",
+              "Bland AI"
+            ],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "feature needs).\n    *   **Top Direct Competitors (Developer-First):** Detailed breakdowns (Vapi, Bland AI, Deep"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          }
+        ]
+      }
+    },
+    "p04": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [
+              "LiteLLM"
+            ],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "Yes, **LiteLLM** is currently the best self-hosted, open-source proxy that fits this exact requirement"
+          }
+        ]
+      }
+    },
+    "p05": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": ":* $0.024 / min (Expensive).\n    *   *Google Cloud Speech-to-Text:* $0."
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": "Architecture for the \"Cheapest\" Router:** Explain *how* to build it for virtually $0 infra cost.\n    *   **"
+          },
+          {
+            "mentioned": false,
+            "cited": false,
+            "position": null,
+            "competitors_mentioned": [],
+            "competitors_cited": [],
+            "citation_domains": [],
+            "excerpt": ""
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          }
+        ]
+      }
+    },
+    "p06": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          }
+        ]
+      }
+    },
+    "p07": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          }
+        ]
+      }
+    },
+    "p08": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          }
+        ]
+      }
+    },
+    "p09": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.ServiceUnavailableError: GeminiException - {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          }
+        ]
+      }
+    },
+    "p10": {
+      "gemini": {
+        "runs": [
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          },
+          {
+            "error": "litellm.RateLimitError: litellm.RateLimitError: geminiException - {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor yo"
+          }
+        ]
+      }
+    }
+  }
+}
