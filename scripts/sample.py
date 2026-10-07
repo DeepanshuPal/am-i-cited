@@ -124,8 +124,8 @@ def main():
                 continue
             full = next(e for e in tracker["engines"] if e["id"] == eng["id"])
             runs = []
-            delay = 15.0
             for i in range(n):
+                delay = 15.0
                 attempt = 0
                 while True:
                     try:
@@ -134,7 +134,8 @@ def main():
                             messages=[{"role": "user", "content": prompt["text"]}],
                             temperature=1.0,
                             max_tokens=700,
-                            timeout=90,
+                            timeout=30,
+                            num_retries=0,
                         )
                         answer = resp.choices[0].message.content or ""
                         runs.append(analyze(answer, project, competitors))
@@ -149,7 +150,7 @@ def main():
                             or "rate" in str(e).lower()
                         )
                         attempt += 1
-                        if transient and attempt <= 6:
+                        if transient and attempt <= 1:
                             wait = delay + random.uniform(0, 5)
                             print(f"[rate] {prompt['id']} {eng['id']} sample {i + 1}/{n}: retry {attempt} in {wait:.0f}s")
                             time.sleep(wait)
